@@ -30,6 +30,21 @@ Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.
 
 Getting Started
 ---------------
+- Clone the app with `git clone git@github.com:mlitven/dorbo.git`
+- `cd dorbo` to go into the folder
+- Install Homebrew: `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+- Install Ruby (even if you already have it, this will update): `brew install ruby`
+- Install GPG with Homebrew: `brew install gpg`
+- Install RVM following the instructions at http://rvm.io:
+- `gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3`
+- `\curl -sSL https://get.rvm.io | bash`
+- Follow the instructions, `To start using RVM you need to run…`
+
+
+
+Running the App
+---------------
+- Run `rails s`
 
 Documentation and Support
 -------------------------
@@ -55,7 +70,7 @@ Notes
 
 Dorbo
 ================
-
+```
 Rails Composer is supported by developers who purchase our RailsApps tutorials.
 Need help? Ask on Stack Overflow with the tag 'railsapps.'
 Problems? Submit an issue: https://github.com/RailsApps/rails_apps_composer/issues
@@ -113,3 +128,4 @@ option  Use 'pry' as console replacement during development and test?
 choose  Enter your selection: [false]
 option  Use or create a project-specific rvm gemset?
 choose  Enter your selection: []
+```
