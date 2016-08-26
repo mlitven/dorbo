@@ -5,6 +5,11 @@
         <div class="col-lg-12 text-center">
             <h1>Dorbo</h1>
             <p class="lead">Dorbo Lives!</p>
+            <% @strips.each do |strip| %>
+              <li>
+                <%= strip.title %>
+              </li>
+            <% end %>
         </div>
     </div>
     <!-- /.row -->
