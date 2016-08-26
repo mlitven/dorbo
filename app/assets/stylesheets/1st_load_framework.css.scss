@@ -2,6 +2,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+body {
+  background: white;
+}
+body.night-theme {
+  background: black;
+}
+
 // make all images responsive by default
 img {
   @extend .img-responsive;

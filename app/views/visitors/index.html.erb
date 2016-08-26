@@ -3,8 +3,8 @@
 
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h1>Dorbo</h1>
-            <p class="lead">Dorbo Lives!</p>
+            <h1><%= image_tag @header_image_filename %></h1>
+            <p class="lead">Hello.</p>
             <% @strips.each do |strip| %>
               <li>
                 <%= strip.title %>

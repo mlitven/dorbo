@@ -3,5 +3,8 @@ class VisitorsController < ApplicationController
     @strips = Strip.all.select do |strip|
       strip.published == true
     end
+
+
+
   end
 end
