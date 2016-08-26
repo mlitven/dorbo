@@ -31,20 +31,37 @@ Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.
 Getting Started
 ---------------
 - Clone the app with `git clone git@github.com:mlitven/dorbo.git`
-- `cd dorbo` to go into the folder
+- `cd dorbo` to go into the folder.
 - Install Homebrew: `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+- `echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile`
+- Close and re-open terminal or ``
 - Install Ruby (even if you already have it, this will update): `brew install ruby`
 - Install GPG with Homebrew: `brew install gpg`
 - Install RVM following the instructions at http://rvm.io:
 - `gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3`
 - `\curl -sSL https://get.rvm.io | bash`
-- Follow the instructions, `To start using RVM you need to run…`
-
+- Follow the instructions, `To start using RVM you need to run…` — or run `source ~/.rvm/scripts/rvm`
+- Install Ruby 2.2.2: 'rvm install ruby-2-2.2'
+- Use Ruby 2.2.2: 'rvm use 2.2.2'
+- Install PostgreSQL: Download and run 'Postgres.app' from http://postgresapp.com
+- Run Postgres.app by clicking twice on it.
+- Install the Homebrew version of PostgreSQL which is required for PostgreSQL to work properly: `brew install postgresql`
+- `bundle install`
+- `rake db:migrate`
+- That's it! You're done. Run `rails s` to start the server.
 
 
 Running the App
 ---------------
 - Run `rails s`
+
+
+Making Updates
+--------------
+- `git pull` to get the newest files from GitHub
+- `git commit -am 'Message here'` to commit files locally
+- `git push` to push local files to GitHub
+
 
 Documentation and Support
 -------------------------
